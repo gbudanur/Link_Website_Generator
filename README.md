@@ -27,7 +27,7 @@ You can add as much as links you'd like.
 
 - Design improvements
 
-## [demo](https://web.itu.edu.tr/budanur21/)
+## [Demo](https://web.itu.edu.tr/budanur21/)
 
 ##
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) 

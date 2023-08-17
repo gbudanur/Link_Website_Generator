@@ -1,4 +1,4 @@
-# Link Website Creator
+# Link Website Generator
 
 This Flask application will help you create a simple website to showcase links related to you. It is still under development, meaning that in the future, its design and abilities will be improved.
 

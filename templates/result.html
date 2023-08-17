@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background: #000000;
+        color: #ffffff;
+        margin: 0;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .result-container {
+        margin-top: 2rem;
+        border: 1px solid #ccc;
+        background-color: #1e1e1e;
+        border-radius: 5px;
+        padding: 1rem;
+        position: relative;
+      }
+
+      .copy-button {
+        position: absolute;
+        top: 1.8rem;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+        background-color: #333333;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        padding: 5px 10px;
+        font-size: 1rem;
+      }
+      .copy-button {
+        right: 35px;
+      }
+      .download-button {
+        position: absolute;
+        top: 1.8rem;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 10px;
+        background-color: #333333;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        padding: 5px 10px;
+        font-size: 1rem;
+      }
+
+      .copy-button:hover,
+      .download-button:hover {
+        background-color: #444444;
+      }
+
+      .download-button {
+        right: 100px;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/github-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="display-4"></h1>
+      <div class="button-container"></div>
+
+      <div class="result-container">
+        <h2 style="display: inline-block">Generated HTML Code</h2>
+        <button class="download-button" onclick="downloadCode()">
+          Get index.html
+        </button>
+        <button class="copy-button" onclick="copyCode()">Copy</button>
+        <pre><code class="html">{{ html_code }}</code></pre>
+      </div>
+    </div>
+
+    <script>
+      function copyCode() {
+        const codeElement = document.querySelector("code.html");
+        const range = document.createRange();
+        range.selectNode(codeElement);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+      }
+      function downloadCode() {
+        const htmlCode = document.querySelector("code.html").textContent;
+        const blob = new Blob([htmlCode], { type: "text/html" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "index.html";
+        link.click();
+      }
+    </script>
+  </body>
+</html>

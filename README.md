@@ -26,7 +26,7 @@ You can add as much as links you'd like.
 
 - Design improvements
 
-## [Demo](
+## [Demo](https://gbudanur.github.io/link_website_generator_demo.html)
 
 ##
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) 

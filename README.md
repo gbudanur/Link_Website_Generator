@@ -10,7 +10,7 @@ This Flask application will help you create a simple website to showcase links r
 ## Usage
 
 - Download the latest release.
-- Run the app.exe and go to http://127.0.0.1:5000
+- Run app.exe and go to http://127.0.0.1:5000
 
 
 | Field        | Description                                    |

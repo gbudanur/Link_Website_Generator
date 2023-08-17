@@ -9,7 +9,7 @@ This Flask application will help you create a simple website to showcase links r
 
 ## Usage
 
-#### Run the app.exe and go to http://127.0.0.1:5000
+- Run the app.exe and go to http://127.0.0.1:5000
 
 
 | Field        | Description                                    |
@@ -18,8 +18,8 @@ This Flask application will help you create a simple website to showcase links r
 | Site Title   | This will be shown over your links             |
     
 You can add as much as links you'd like.  
-#### On the result page, either download index.html and upload it to your hosting service, or copy the code and use it as you like.
-#### You will need to shut down the app.py from the Task Manager when you are done.
+-On the result page, either download index.html and upload it to your hosting service, or copy the code and use it as you like.
+- You will need to shut down the app.py from the Task Manager when you are done.
 ## Roadmap
 
 - Additional customizability options 

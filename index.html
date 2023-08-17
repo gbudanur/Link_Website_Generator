@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Links</title>
+
+    <style>
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        font-family: "Montserrat", sans-serif;
+        background: #000000;
+        user-select: none;
+      }
+
+      .jumbotron {
+        background-color: transparent;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .display-4,
+      .website-url {
+        color: #ffffff;
+        cursor: default;
+      }
+
+      .display-4 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 10rem;
+        margin-top: -2rem;
+      }
+
+      .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .website-url {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        background-color: #333333;
+        border: none;
+        color: #ffffff;
+        opacity: 0;
+        animation: fade-in 1s ease-in-out forwards;
+        transition: transform 0.3s;
+      }
+
+      .website-url:hover {
+        transform: scale(1.2);
+        text-decoration: none;
+      }
+
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-4">your links</h1>
+        <div class="button-container">
+          <a href="http://examplesite.com" class="website-url">Elma</a>
+          <a href="http://examplesite.com" class="website-url">Sebastian Vettel</a>
+          <a href="http://examplesite.com" class="website-url">Sarı Site</a>
+          <a href="http://examplesite.com" class="website-url">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
